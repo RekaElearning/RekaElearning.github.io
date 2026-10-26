@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CikguKit: latihan PDF Tadika hingga Darjah 6, mudah dipilih mengikut subjek.">
+<title>CikguKit | Mudah untuk parent. Seronok untuk anak.</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="nav" id="atas"><div class="wrap navinner">
+<a class="brand" href="#atas"><span>🎓</span> Cikgu<b>Kit</b></a>
+<nav class="links"><a href="#peringkat">Pilih Darjah</a><a href="#katalog">Katalog</a><a href="#sahsiah">Sosial &amp; Sahsiah</a><a href="#faq">Soalan Lazim</a></nav>
+<a class="btn purple" href="#peringkat">Mula →</a></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="herogrid"><div><p class="eyebrow">✨ LATIHAN BERKUALITI UNTUK ANAK ANDA</p>
+<h1>Mudah untuk parent.<br><em>Seronok untuk anak.</em></h1>
+<p class="herotext">Pilih latihan mengikut darjah dan subjek. PDF yang menarik, mudah dicetak dan lengkap dengan jawapan untuk bantu anak belajar di rumah.</p>
+<div class="points"><span>✅ Pilih tanpa pening</span><span>🖨️ Mesra cetak</span><span>📚 Pelbagai subjek</span></div>
+<a class="btn orange" href="#katalog">📖 Terokai katalog →</a></div>
+<div class="heroart"><img src="assets/hero.svg" alt="Ilustrasi ibu dan anak belajar bersama" width="540" height="320"></div></div>
+<div id="peringkat"><div class="eyebrow">PILIH PERINGKAT ANAK</div><div id="gradeTabs" class="gradetabs" aria-label="Pilih darjah"></div></div>
+</div></section>
+<section class="section" id="subjek"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">PILIHAN MUDAH UNTUK PARENT</p><h2>Subjek apa anak nak belajar?</h2><p>Pilih subjek, kemudian tengok set latihan yang sesuai.</p></div><span class="hint">1. Darjah &nbsp;→&nbsp; 2. Subjek &nbsp;→&nbsp; 3. Set</span></div><div class="subjects" id="subjectTiles"></div></div></section>
+<section class="section" id="katalog"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">⭐ KATALOG CIKGUKIT</p><h2>Pilih set latihan</h2><p>Set lengkap, topikal dan persediaan peperiksaan. Hanya set siap boleh dibeli.</p></div><span class="hint">📥 PDF selepas pembayaran</span></div>
+<div class="catalogshell"><div class="filters"><label>Peringkat<select id="gradeFilter"></select></label><label>Subjek<select id="subjectFilter"></select></label><label>Jenis set<select id="typeFilter"><option value="Semua">Semua jenis</option><option value="Lengkap">Pakej Lengkap</option><option value="Topikal">Topikal</option><option value="Ujian">Set Ujian</option></select></label><label>Cari latihan<input id="searchFilter" type="search" placeholder="Cari topik..."></label><label class="toggle"><input type="checkbox" id="onlyReady" checked> Hanya set tersedia</label><button class="reset" id="resetFilters">Reset</button></div>
+<p id="results" class="results" aria-live="polite"></p><div class="products" id="productGrid"></div>
+<div id="emptyState" class="empty" hidden><div>🧸</div><h3>Belum ada set untuk pilihan ini</h3><p>Kami sedang menyediakan koleksi yang sesuai. Cuba pilih darjah atau subjek lain.</p><button id="showReady" class="btn purple">Lihat set tersedia</button></div></div></div></section>
+<section class="section" id="sahsiah"><div class="wrap"><div class="life"><div class="sectionhead"><div><p class="eyebrow">💗 NILAI MURNI &amp; EMOSI</p><h2>Topik Sosial &amp; Sahsiah</h2><p>Bantu anak belajar berkawan, hormat orang lain dan mengurus emosi.</p></div><span class="hint">Sedang disediakan</span></div><div id="lifeCards" class="lifecards"></div><p class="fine">Harga dirancang RM9 setiap kit apabila siap. Belum tersedia untuk pembelian.</p></div></div></section>
+<section class="section"><div class="wrap"><div class="benefits"><div>⚡ <b>Mudah dipilih</b><small>Darjah → subjek → set</small></div><div>🖨️ <b>Mesra cetak</b><small>PDF A4</small></div><div>📗 <b>Skema jawapan</b><small>Senang parent semak</small></div><div>🔁 <b>Guna semula</b><small>Untuk belajar di rumah</small></div></div></div></section>
+<section class="section" id="faq"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">SOALAN LAZIM</p><h2>Ada pertanyaan?</h2><p>Maklumat ringkas sebelum membeli latihan CikguKit.</p></div></div><div class="faqs">
+<details><summary>Bagaimana parent download PDF?</summary><p>Apabila checkout diaktifkan, selepas pembayaran berjaya parent akan menerima pautan download dan email pembelian.</p></details>
+<details><summary>Boleh cetak berulang kali?</summary><p>Boleh untuk kegunaan peribadi keluarga sahaja. Fail tidak boleh dijual semula.</p></details>
+<details><summary>Semua set dah siap?</summary><p>Set tersedia dipaparkan dalam katalog. Koleksi subjek dan darjah lain akan ditambah berperingkat.</p></details>
+<details><summary>Adakah latihan menjamin anak akan pandai?</summary><p>Tidak. Bahan membantu latihan dan ulang kaji, tetapi kemajuan anak bergantung pada bimbingan dan penggunaan.</p></details></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><strong>🎓 CikguKit</strong><span>Mudah untuk parent. Seronok untuk anak. · Bukan penerbitan rasmi KPM.</span></div></footer>
+<div class="backdrop" id="modal" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialoghead"><h2 id="modalTitle">Butiran produk</h2><button type="button" id="closeModal" aria-label="Tutup">✕</button></div><div class="dialoggrid">
+<div class="sample"><strong>CONTOH SOALAN</strong><div class="paper"><h3>Matematik Darjah 1</h3><div class="qgrid"><div><small>01</small><p>Tulis nombor 63 dalam perkataan.</p></div><div><small>02</small><p>Tulis “lapan puluh lima” dalam angka.</p></div><div><small>03</small><p>Hitung 34 + 12.</p></div><div><small>04</small><p>Hitung 56 − 24.</p></div></div><p class="fine">Pratonton ringkas sahaja. PDF penuh diberikan selepas bayaran apabila checkout aktif.</p></div></div>
+<div class="details"><div class="badges"><span>100 soalan</span><span>8 bab</span><span>PDF A4</span></div><p id="modalDescription"></p><ul><li>Nombor hingga 100</li><li>Tambah &amp; Tolak</li><li>Pecahan</li><li>Wang</li><li>Masa &amp; Waktu</li><li>Ukuran</li><li>Bentuk</li><li>Data</li></ul><div class="price">RM15</div><button class="btn purple" id="buyButton" type="button">Checkout belum aktif</button><p class="fine">Fail PDF penuh disimpan berasingan, bukan di website awam.</p></div>
+</div></div></div>
+<div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
+<script src="products.js"></script><script src="app.js"></script>
+</body></html>
