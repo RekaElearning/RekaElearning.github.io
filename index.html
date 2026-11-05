@@ -94,6 +94,7 @@ const PRODUCTS=[];
 for (const g of grades){
   const subs=validSubjects(g);
   for(const s of subs){
+    if(s==='Logik & Penaakulan')continue; // Set A/B are shared across Darjah 1–6
     const isReady=s==='Matematik'&&g!=='Tadika';
     PRODUCTS.push({id:`p-${g}-${s}`,grade:g,subject:s,type:'Lengkap',title:`Pakej Lengkap ${s} ${g}`,status:isReady?'ready':'soon',description:isReady?`100 soalan · ${MATH_TOPICS[g].length} bab · Set A · skema jawapan`:'Koleksi pakej mengikut darjah dan subjek',price:isReady?15:null});
   }
